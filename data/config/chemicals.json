@@ -1,0 +1,30 @@
+{ "comment": ["The characteristics of each chemical are given here.",
+              "Format: chemical ID: stimuli ID, chemical name, chemical description, diffusivity, diffusion term, evaporation term ",
+              "..."],              
+ "chemicalsCharacteristicsJSON": {
+   "constants":{
+            "0": {"stimulusID":65536,  "name":"None",  "desc":"",
+                  "diffusivity":0.0, "time_diffusion": 0.0, "time_evaporation": 0.0 },
+            "1": {"stimulusID":65535,  "name":"NaCl",  "desc":"(attractant, water soluble)",
+                  "diffusivity":25, "time_diffusion": 0.01, "time_evaporation": 0.01 },
+            "2": {"stimulusID":65534,  "name":"biotin",  "desc":"(attractant, water soluble)",
+                  "diffusivity":1.01, "time_diffusion": 0.01, "time_evaporation": 0.01 },
+            "3": {"stimulusID":65533,  "name":"ethanol",  "desc":"(attractant, odorant/volatile)",
+                  "diffusivity":4.0, "time_diffusion": 0.01, "time_evaporation": 0.01 },
+            "4": {"stimulusID":65532,  "name":"butanone",  "desc":"(attractant, odorant/volatile)",
+                  "diffusivity":4.0, "time_diffusion": 0.01, "time_evaporation": 0.01 },
+            "5": {"stimulusID":65531,  "name":"CuSO4",  "desc":"(barrier, repellent, water soluble)",
+                  "diffusivity":0.01, "time_diffusion": 0.01, "time_evaporation": 0.01 },
+            "6": {"stimulusID":65530,  "name":"SDS",  "desc":"Sodium dodecyl sulfate (barrier, repellent, water soluble)",
+                  "diffusivity":0.01, "time_diffusion": 0.01, "time_evaporation": 0.01 },
+            "7": {"stimulusID":65529,  "name":"quinine",  "desc":"(repellent, water soluble)",
+                  "diffusivity":1.01, "time_diffusion": 0.01, "time_evaporation": 0.01 },
+            "8": {"stimulusID":65528,  "name":"benzaldehyde",  "desc":"(repellent, odorant/volatile)",
+                  "diffusivity":4.01, "time_diffusion": 0.01, "time_evaporation": 0.01 },
+            "9": {"stimulusID":65527,  "name":"diacetyl",  "desc":"(repellent, odorant/volatile)",
+                  "diffusivity":4.01, "time_diffusion": 0.01, "time_evaporation": 0.01 },
+            "10": {"stimulusID":65526,  "name":"NaN3",  "desc":"Sodium azide (immobilization agent)",
+                  "diffusivity":0.4, "time_diffusion": 0.01, "time_evaporation": 0.01 }
+       }
+  }
+}
