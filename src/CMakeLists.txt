@@ -1,5 +1,14 @@
-include(${SOFA_CMAKE_DIR}/preProject.cmake)
+cmake_minimum_required(VERSION 3.18)
 
+set(SofaFramework_DIR "/Applications/runSofa.app/Contents/MacOS/lib/cmake")
+set(SofaCommon_DIR "/Applications/runSofa.app/Contents/MacOS/lib/cmake")
+set(CMAKE_PREFIX_PATH "/Applications/runSofa.app/Contents/MacOS/lib/cmake")
+set(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "/usr/local/opt/boost@1.60/include")
+set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "/usr/local/opt/boost@1.60/lib")
+include_directories( EIGEN3_INCLUDE_DIR )
+
+include(${SOFA_CMAKE_DIR}/preProject.cmake)
+project(SiElegans VERSION 1.0)
 find_package(CURL)
 find_package(Qt4)
 
