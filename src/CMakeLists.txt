@@ -1,4 +1,5 @@
 include(${SOFA_CMAKE_DIR}/preProject.cmake)
+project(SiElegans VERSION 1.0)
 
 find_package(CURL)
 find_package(Qt4)
