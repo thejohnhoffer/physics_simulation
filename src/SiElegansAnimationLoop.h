@@ -8,10 +8,10 @@
 
 #include "initPlugin.h"
 #include "Stimuli.h"
-#include "SaveScreenShots.h"
-#include "InterfaceManagerActivation.h"
+//#include "SaveScreenShots.h"
+//#include "InterfaceManagerActivation.h"
 
-#include <sofa/simulation/common/DefaultAnimationLoop.h>
+#include <sofa/simulation/DefaultAnimationLoop.h>
 
 
 namespace sofa
@@ -58,7 +58,7 @@ public:
 	float m_currentSyncTime;
 
 	std::vector<component::behaviormodel::Stimuli*> m_stimuliVec;
-	sofa::component::misc::SaveScreenShots* m_screensaver;
+	//sofa::component::misc::SaveScreenShots* m_screensaver;
 	sofa::component::mass::InterfaceManagerActivation<defaulttype::Vec3dTypes,double>* m_muscleActivation;
 
 	Data<bool> f_writeTraces;

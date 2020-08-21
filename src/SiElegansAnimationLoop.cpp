@@ -5,31 +5,31 @@
 
 #include <sofa/core/ObjectFactory.h>
 
-#include <sofa/simulation/common/PrintVisitor.h>
-#include <sofa/simulation/common/FindByTypeVisitor.h>
-#include <sofa/simulation/common/ExportGnuplotVisitor.h>
-#include <sofa/simulation/common/InitVisitor.h>
-#include <sofa/simulation/common/AnimateVisitor.h>
-#include <sofa/simulation/common/MechanicalVisitor.h>
-#include <sofa/simulation/common/CollisionVisitor.h>
-//#include <sofa/simulation/common/CollisionBeginEvent.h>
-//#include <sofa/simulation/common/CollisionEndEvent.h>
-#include <sofa/simulation/common/UpdateContextVisitor.h>
-#include <sofa/simulation/common/UpdateMappingVisitor.h>
-#include <sofa/simulation/common/ResetVisitor.h>
-#include <sofa/simulation/common/VisualVisitor.h>
-#include <sofa/simulation/common/ExportOBJVisitor.h>
-#include <sofa/simulation/common/WriteStateVisitor.h>
-#include <sofa/simulation/common/XMLPrintVisitor.h>
-#include <sofa/simulation/common/PropagateEventVisitor.h>
-#include <sofa/simulation/common/BehaviorUpdatePositionVisitor.h>
-#include <sofa/simulation/common/AnimateBeginEvent.h>
-#include <sofa/simulation/common/AnimateEndEvent.h>
-#include <sofa/simulation/common/UpdateMappingEndEvent.h>
-#include <sofa/simulation/common/CleanupVisitor.h>
-#include <sofa/simulation/common/DeleteVisitor.h>
-#include <sofa/simulation/common/UpdateBoundingBoxVisitor.h>
-#include <sofa/simulation/common/xml/NodeElement.h>
+#include <sofa/simulation/PrintVisitor.h>
+//#include <sofa/simulation/FindByTypeVisitor.h>
+#include <sofa/simulation/ExportGnuplotVisitor.h>
+#include <sofa/simulation/InitVisitor.h>
+#include <sofa/simulation/AnimateVisitor.h>
+#include <sofa/simulation/MechanicalVisitor.h>
+#include <sofa/simulation/CollisionVisitor.h>
+//#include <sofa/simulation/CollisionBeginEvent.h>
+//#include <sofa/simulation/CollisionEndEvent.h>
+#include <sofa/simulation/UpdateContextVisitor.h>
+#include <sofa/simulation/UpdateMappingVisitor.h>
+#include <sofa/simulation/ResetVisitor.h>
+#include <sofa/simulation/VisualVisitor.h>
+#include <sofa/simulation/ExportOBJVisitor.h>
+#include <sofa/simulation/WriteStateVisitor.h>
+#include <sofa/simulation/XMLPrintVisitor.h>
+#include <sofa/simulation/PropagateEventVisitor.h>
+#include <sofa/simulation/BehaviorUpdatePositionVisitor.h>
+#include <sofa/simulation/AnimateBeginEvent.h>
+#include <sofa/simulation/AnimateEndEvent.h>
+#include <sofa/simulation/UpdateMappingEndEvent.h>
+#include <sofa/simulation/CleanupVisitor.h>
+#include <sofa/simulation/DeleteVisitor.h>
+#include <sofa/simulation/UpdateBoundingBoxVisitor.h>
+//#include <sofa/simulation/xml/NodeElement.h>
 
 #include <sofa/helper/system/SetDirectory.h>
 //#include <sofa/helper/system/PipeProcess.h>
@@ -97,8 +97,8 @@ void SiElegansAnimationLoop::init()
 	std::cout << "added stimulus: " << m_stimuliVec[i]->getName() << std::endl;
   }
   
-  sofa::helper::vector<sofa::component::mass::InterfaceManagerActivation<defaulttype::Vec3dTypes,double>*> aux2;
-  gnode->getTreeObjects<sofa::component::mass::InterfaceManagerActivation<defaulttype::Vec3dTypes,double>>(&aux2);
+  //sofa::helper::vector<sofa::component::mass::InterfaceManagerActivation<defaulttype::Vec3dTypes,double>*> aux2;
+  //gnode->getTreeObjects<sofa::component::mass::InterfaceManagerActivation<defaulttype::Vec3dTypes,double>>(&aux2);
   if(aux2.size() > 0){
 	m_muscleActivation = aux2.at(0);
   }
