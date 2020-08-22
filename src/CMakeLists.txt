@@ -6,7 +6,7 @@ find_package(SofaGeneral REQUIRED)
 find_package(SofaBase REQUIRED)
 
 find_package(CURL)
-#find_package(Qt4)
+find_package(Qt4)
 
 include_directories(
 	${CURL_INCLUDE_DIR}
@@ -60,7 +60,7 @@ set(README_FILES
 #SET( GUI_MOC_HDRS SaveScreenShots.h)
 
 # Generate moc files
-QT5_WRAP_CPP(MOC_FILES ${GUI_MOC_HDRS})
+QT4_WRAP_CPP(MOC_FILES ${GUI_MOC_HDRS})
 #SOFA_QT4_WRAP_UI(FORM_FILES ${UI_FILES})
 
 

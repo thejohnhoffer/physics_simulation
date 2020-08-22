@@ -9,18 +9,15 @@
 #include "initPlugin.h"
 #include "Stimuli.h"
 //#include "SaveScreenShots.h"
-//#include "InterfaceManagerActivation.h"
+#include "InterfaceManagerActivation.h"
 
 #include <sofa/simulation/DefaultAnimationLoop.h>
-
 
 namespace sofa
 {
 
-namespace simulation
+namespace simulation 
 {
-
-
 
 //***************** Tetrahedron FEM code for several elastic models: StandardTetrahedralFEMForceField*******************************************************************
 //********************************** Based on classical discretization : Fi=-Bi^T S V and Kij=Bi^T N Bj +Di^T S Dj **********************************************
@@ -69,7 +66,7 @@ public:
 
 };
 
-} // namespace component
+} // namespace simulation
 
 } // namespace sofa
 
